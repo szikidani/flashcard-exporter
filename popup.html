@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 280px;
+      padding: 15px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #1a1a1a;
+      color: #fff;
+    }
+    h2 {
+      margin: 0 0 15px 0;
+      font-size: 16px;
+      color: #4CAF50;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      background: #4CAF50;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    button:disabled {
+      background: #666;
+      cursor: not-allowed;
+    }
+    #status {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      display: none;
+    }
+    .success {
+      background: #2e7d32;
+      display: block !important;
+    }
+    .error {
+      background: #c62828;
+      display: block !important;
+    }
+    .progress {
+      background: #1565c0;
+      display: block !important;
+    }
+  </style>
+</head>
+<body>
+  <h2>📚 Flashcard Exporter</h2>
+  <button id="exportBtn" disabled>Indítás...</button>
+  <div id="status" class="progress">⏳ Görgetés és gyűjtés...</div>
+  <script src="popup.js"></script>
+</body>
+</html>
