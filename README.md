@@ -130,7 +130,6 @@ The extension extracts data from the following list view:
 ## 📋 Output Format
 
 ```csv
-butt,fenék
 proud,büszke
 tooth,fog
 sort,fajta; válogat
